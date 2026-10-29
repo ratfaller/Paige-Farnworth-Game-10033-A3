@@ -15,7 +15,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-
+            
         }
 
         /// <summary>
