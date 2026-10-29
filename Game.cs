@@ -15,7 +15,9 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-            
+            Window.SetSize(800, 600);
+            Window.SetTitle("Space Invaders");
+            Window.ClearBackground(0, 0, 0);
         }
 
         /// <summary>
