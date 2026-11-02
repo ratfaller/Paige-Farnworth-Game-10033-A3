@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace MohawkGame2D
@@ -18,8 +19,7 @@ namespace MohawkGame2D
         public void Update()
         {
 
-            Draw.SetFillColor(Color.Green);
-            Draw.Circle(x + 50, y, 10);
+            DrawBullet();
 
             if(Input.IsKeyboardKeyDown(KeyboardKey.Right))
             {
@@ -37,6 +37,13 @@ namespace MohawkGame2D
             }
 
             y += bulletSpeed * Time.DeltaTime;
+
+            
+        }
+        public void DrawBullet()
+        {
+            Draw.SetFillColor(Color.Green);
+            Draw.Circle(x + 50, y, 10);
         }
     }
 }

@@ -15,10 +15,7 @@ namespace MohawkGame2D
 
         public void Update()
         {
-            Draw.SetLineSize(0);
-            Draw.SetFillColor(Color.Green);
-            Draw.Rectangle(x, 500, 100, 50);
-            Draw.Rectangle(x + 40, 480, 20, 30);
+            DrawShip();
 
             if (Input.IsKeyboardKeyDown(KeyboardKey.Right))
             {
@@ -29,6 +26,14 @@ namespace MohawkGame2D
             {
                 x -= speed * Time.DeltaTime;
             }
+        }
+
+        public void DrawShip()
+        {
+            Draw.SetLineSize(0);
+            Draw.SetFillColor(Color.Green);
+            Draw.Rectangle(x, 500, 100, 50);
+            Draw.Rectangle(x + 40, 480, 20, 30);
         }
     }
 }
