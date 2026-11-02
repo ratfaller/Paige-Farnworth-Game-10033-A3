@@ -26,7 +26,9 @@ public class Enemy
             Draw.SetFillColor(Color.Red);
             Draw.Circle(x + 100, 100, 50);
             Draw.SetFillColor(Color.Black);
-            Draw.Circle(x + 120, 75, 10);
+            Draw.Circle(x + 120, 90, 10);
+            Draw.Circle(x + 80, 90, 10);
+            Draw.Rectangle(x + 80, 120, 30, 10);
 
         }
         
