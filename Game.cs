@@ -10,14 +10,12 @@ namespace MohawkGame2D
     /// </summary>
     public class Game
     {
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        Ship ship = new Ship();
+        Shoot shoot = new Shoot();
         public void Setup()
         {
             Window.SetSize(800, 600);
-            Window.SetTitle("Space Invaders");
-            Window.ClearBackground(0, 0, 0);
+            Window.SetTitle("Sludge Invaders");
         }
 
         /// <summary>
@@ -25,7 +23,9 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground(0, 0, 0);
+            ship.Update();
+            shoot.Update();
         }
     }
 
